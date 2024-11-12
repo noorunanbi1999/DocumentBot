@@ -71,7 +71,7 @@ app.post('/completions', async (req, res) => {
   // Call Gemini or any other API here using combinedPrompt
     const result = await model.generateContent(combinedPrompt)
     console.log(userMessage)
-  res.send({ message: result.response.text() }) // Placeholder response
+  res.send({ message: result.response.text() }) 
 })
 
 app.listen(PORT, () => console.log("Server running on port " + PORT))
