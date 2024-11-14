@@ -112,7 +112,7 @@ const Admin = () => {
           className="uploadFile"
         />
         <nav>
-          <p>Made by Varun</p>
+          <p></p>
         </nav>
       </section>
 
@@ -140,7 +140,10 @@ const Admin = () => {
               &#10146;
             </div>
           </div>
-          <p className="info"> This ChatBot is run on AI and can at times hallucinate</p>
+          <p className="info">
+            {" "}
+            This ChatBot is run on AI and can at times hallucinate
+          </p>
         </div>
       </section>
     </div>

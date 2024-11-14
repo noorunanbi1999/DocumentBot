@@ -19,7 +19,7 @@ const Home = () => {
     setPassword(e.target.value);
   };
   const handleAdminLogin = () => {
-    setShowAdminLogin(true); // Show the admin login modal
+    setShowAdminLogin(true); // Show Admin Panel
   };
 
   const handleUserLogin = () => {
@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   const closeAdminLogin = () => {
-    setShowAdminLogin(false); // Close the admin login modal
+    setShowAdminLogin(false); //Close login panel
   };
 
   const handleFormSubmit=(e)=>{
@@ -44,7 +44,7 @@ const Home = () => {
     <div className="home-container">
       <div className="welcome-section">
         <img
-          src="https://via.placeholder.com/150" // Replace with a logo or decorative image URL
+          src="https://magnitudemanagement.com/wp-content/uploads/2019/01/bot-icon-2883144-1024x1024.png" //logo
           alt="Document Bot Logo"
           className="logo"
         />
@@ -62,6 +62,7 @@ const Home = () => {
           Login as User
         </button>
       </div>
+      
       {/* Admin Login Modal */}
       {showAdminLogin && (
         <div className="modal-overlay">
@@ -74,7 +75,7 @@ const Home = () => {
                 className="input-field"
                 value={username}
                 onChange={handleUsername}
-                style={{color:"black"}}
+                style={{ color: "black" }}
               />
               <input
                 type="password"
@@ -82,7 +83,7 @@ const Home = () => {
                 className="input-field"
                 value={password}
                 onChange={handlePassword}
-                style={{color:"black"}}
+                style={{ color: "black" }}
               />
               <button type="submit" className="submit-button">
                 Login
